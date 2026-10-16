@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#502314">
+    <meta name="description" content="Chef Zakes · Home Cooked Meal Palace - Authentic, hearty meals made with love in Vosloorus.">
+    <title>Chef Zakes · Home Cooked Meal Palace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== LOADING OVERLAY ========== -->
+    <div id="loading-overlay">
+        <div class="loader-logo">
+            <img src="images/chef-zakes-logo.jpg" alt="Chef Zakes Logo" onerror="this.style.display='none'">
+            <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="loader-fallback-svg">
+        <path d="M100 10 C85 10 75 20 72 32 C65 28 55 28 48 34 C40 41 38 52 44 61 C36 65 32 75 36 85 C40 95 52 100 64 98 L136 98 C148 100 160 95 164 85 C168 75 164 65 156 61 C162 52 160 41 152 34 C145 28 135 28 128 32 C125 20 115 10 100 10Z" fill="#F5EBDC" stroke="#502314" stroke-width="3"/>
+        <circle cx="100" cy="50" r="8" fill="#FE8732"/>
+        <text x="100" y="118" font-family="Flame, Inter, sans-serif" font-size="22" font-weight="bold" fill="#F5EBDC" text-anchor="middle">CHEF ZAKES</text>
+      </svg>
+        </div>
+        <div class="loader-text">
+            <span>LOADING</span>
+            <div class="loader-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="app-header">
+        <a href="#/" class="header-logo" data-nav="home">
+            <img src="images/chef-zakes-logo.jpg" alt="Chef Zakes" class="header-logo-img" onerror="this.style.display='none'">
+            <svg viewBox="0 0 60 60" width="40" height="40" class="header-logo-fallback">
+        <circle cx="30" cy="30" r="28" fill="#502314" stroke="#FE8732" stroke-width="2"/>
+        <path d="M30 10 C23 10 18 15 16 21 C13 19 8 19 5 22 C2 26 1 32 4 36 C2 38 0 43 2 48 C4 53 10 55 15 54 L45 54 C50 55 56 53 58 48 C60 43 58 38 56 36 C59 32 58 26 55 22 C52 19 47 19 44 21 C42 15 37 10 30 10Z" fill="#F5EBDC"/>
+        <circle cx="30" cy="28" r="5" fill="#FE8732"/>
+        <text x="30" y="52" font-family="Flame, Inter, sans-serif" font-size="10" font-weight="bold" fill="#502314" text-anchor="middle">CZ</text>
+      </svg>
+            <span>Chef Zakes</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+        <nav class="header-nav" id="header-nav">
+            <a href="#/" data-nav="home">Home</a>
+            <a href="#/menu" data-nav="menu">Menu</a>
+            <a href="#/gallery" data-nav="gallery">Gallery</a>
+            <a href="#/contact" data-nav="contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN APP ========== -->
+    <main id="app"></main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="app-footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>Chef Zakes</h4>
+                <p>Home Cooked Meal Palace</p>
+                <p>1118 Churchill Mokoeka Street<br>Vosloorus Ext 2</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="tel:0672529826">067 252 9826</a>
+                <a href="#">WhatsApp Order</a>
+            </div>
+            <div class="footer-col">
+                <h4>Hours</h4>
+                <p>Mon–Fri: 9am – 8pm</p>
+                <p>Sat–Sun: 10am – 9pm</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Chef Zakes · Happiness is Homemade</span>
+            <span>#ChefZakes #HomeCookedMealPalace</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
